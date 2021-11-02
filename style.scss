@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+@import 'basic';
+@import 'mixins';
+@import 'variables';
+
+
+
+nav {
+  background: #09192c;
+  padding: 30px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 50px;
+}
+
+footer {
+  background: #0b193c;
+  text-align: center;
+  padding: 80px 0;
+  color: white;
+}
+
+footer > a:first-child {
+  font-size: 1.5rem;
+}
+
+footer p {
+  padding: 20px 0;
+}
+
+footer .icons a {
+  margin: 0 20px;
+  font-size: 1.2rem;
+}
+
+.mainHeader {
+  background: #0b193c;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainHeader article {
+  flex: 0 0 50%;
+  padding: 0 60px;
+}
+
+.mainHeader article img {
+  width: 100%;
+  padding: 30px 0;
+}
+
+.mainHeader article h1 {
+  font-size: 4rem;
+}
+
+.mainHeader article h1 span {
+  color: #f91257;
+}
+
+.mainHeader article p {
+  padding: 20px 0;
+}
+
+.mainHeader article button {
+  padding: 20px 40px;
+  font-size: 1rem;
+  background: #f91257;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 40px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.mainHeader article button:hover {
+  background: #383c6e;
+}
+
+.unlimited {
+  padding: 80px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.unlimited article {
+  flex: 0 0 48%;
+}
+
+.unlimited article button {
+  padding: 20px 40px;
+  font-size: 1rem;
+  background: #f91257;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 40px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.unlimited article button:hover {
+  background: #383c6e;
+}
+
+.hiwHeader {
+  background: #0b193c;
+  color: white;
+  padding: 80px 0;
+}
+
+.hiwHeader article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hiwHeader article div {
+  flex: 0 0 30%;
+  margin-top: 20px;
+}
+
+.hiwHeader article div i {
+  color: #f91257;
+  font-size: 4rem;
+}
+
+.hiwHeader article div h3 {
+  font-size: 1.7rem;
+  margin: 30px 0;
+}
+
+// Subsription
+.subscriptions {
+    padding: $padding;
+    background: $tamnoPlava;
+    color: $bela;
+    article {
+        @include flex;
+        div:first-child {
+            flex: 0 0 48%;
+            h4 {
+                color: $pink;
+                font-size: 1.8rem;
+                padding: 15px 0;
+            }
+            button {
+                @include btn;
+            }
+        }
+        div:last-child {
+            flex: 0 0 48%;
+            background: rgba($bela, .1);
+            padding: 30px;
+            border-radius: 30px;
+            ul {
+                line-height: 3;
+                text-indent: 100px;
+                li::before {
+                    font-family: "Font Awesome 5 Free"; 
+                    font-weight: 900; 
+                    content: "\f058";
+                    margin-right: 10px;
+                    color: $pink;
+                }
+                
+            }
+        }
+    }
+}
+.concept{
+    @extend .artists;
+    article:last-child{
+        div{
+            flex: 0 0 15%;
+            img{
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.scss.map */
